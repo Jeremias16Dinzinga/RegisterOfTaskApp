@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstapp.controller.SignUpController">
+   <children>
+      <PasswordField fx:id="signUpPassword" layoutX="206.0" layoutY="217.0" prefHeight="25.0" prefWidth="324.0" promptText="Password" />
+      <AnchorPane layoutX="-1.0" prefHeight="55.0" prefWidth="710.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label alignment="CENTER" layoutX="333.0" layoutY="14.0" text="SWEET APP" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="signUpFirstName" layoutX="206.0" layoutY="89.0" prefHeight="25.0" prefWidth="324.0" promptText="First Name">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="signUpLastName" layoutX="206.0" layoutY="131.0" prefHeight="25.0" prefWidth="324.0" promptText="Last Name">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="signUpUserName" layoutX="206.0" layoutY="174.0" prefHeight="25.0" prefWidth="324.0" promptText="Username">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="signUpLacation" layoutX="206.0" layoutY="301.0" prefHeight="25.0" prefWidth="324.0" promptText="Location">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <RadioButton fx:id="signUpMale" layoutX="240.0" layoutY="264.0" mnemonicParsing="false" selected="true" text="Male" textFill="#7d7a7a" />
+      <RadioButton fx:id="signUpFamale" layoutX="337.0" layoutY="264.0" mnemonicParsing="false" text="Famale" textFill="#7d7a7a" />
+      <Button fx:id="SignUpButton" layoutX="272.0" layoutY="343.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="191.0" style="-fx-background-color: #424242;" text="Sign Up" textFill="#fdfafa" />
+   </children>
+</AnchorPane>

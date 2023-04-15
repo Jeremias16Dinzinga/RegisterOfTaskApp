@@ -1,0 +1,11 @@
+
+===========Colors=============
+
+- Primary (bg) = #d32f2f
+- Light = #ff6659
+- Dark = #9a0007
+- Text color = #ffffff
+- Secondary color= #424242 
+
+
+Login

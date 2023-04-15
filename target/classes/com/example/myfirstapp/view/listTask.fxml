@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstapp.controller.ListTaskController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="12.0" prefHeight="400.0" prefWidth="700.0">
+         <children>
+            <TextField fx:id="AddTaskDescription" alignment="TOP_LEFT" focusTraversable="false" layoutX="79.0" layoutY="189.0" prefHeight="53.0" prefWidth="218.0" promptText="Description">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="AddTaskBtn" layoutX="128.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #d32f2f;" text="Save Task" textFill="#fdfafa" />
+            <TextField fx:id="AddTaskField" alignment="TOP_LEFT" layoutX="79.0" layoutY="134.0" prefHeight="25.0" prefWidth="211.0" promptText="Task">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <AnchorPane prefHeight="92.0" prefWidth="710.0" style="-fx-background-color: #424242;">
+               <children>
+                  <Label alignment="CENTER" layoutX="318.0" layoutY="32.0" text="SWEET APP" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="labelSuccessful" alignment="CENTER" layoutX="79.0" layoutY="256.0" prefHeight="19.0" prefWidth="218.0" text="Saved successfully " textFill="#74ed4b" visible="false">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listTaskView" layoutX="391.0" layoutY="100.0" prefHeight="285.0" prefWidth="307.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ListView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
